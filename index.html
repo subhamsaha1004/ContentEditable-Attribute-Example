@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Native text editing with the contenteditable attribute</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Kelly+Slab|Oleo+Script+Swash+Caps:400,700|Amaranth:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="page">
+		<h1>Text editing with the contenteditable attribute</h1>
+		<div id="content">
+			<div class="editableWrapper">
+				<h2>The contenteditable attribute</h2>
+				<div class="editable" contenteditable="true">Click here to edit text</div>
+			</div>
+			<div class="editableWrapper">
+				<h2>Toggle editing with Javascript</h2>
+				<div class="btnWrapper">
+					<button id="edit" class="btn">Enable Editing</button>
+				</div>
+				<div class="editable" id="editor">Click the botton to enable content editing.</div>
+			</div>
+
+			<div class="editableWrapper">
+				<h2>Toggle editing with Javascript for the whole document</h2>
+				<div class="btnWrapper">
+					<button id="editForPage" class="btn">Enable Editing for whole page</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
